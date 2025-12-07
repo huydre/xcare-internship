@@ -1,0 +1,21 @@
+li {
+    display: inline-block;
+}
+
+li span {
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    position: relative;
+}
+
+li:nth-child(odd) span {
+    background-color: red;
+}
+
+li:nth-child(even) span {
+    background-color: dodgerblue;
+}
