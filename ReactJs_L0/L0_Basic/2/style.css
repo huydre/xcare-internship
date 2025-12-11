@@ -1,21 +1,89 @@
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
 li {
     display: inline-block;
 }
 
 li span {
     display: block;
-    width: 80px;
-    height: 80px;
     text-align: center;
     margin: 10px;
     padding: 15px;
     position: relative;
 }
 
-li:nth-child(odd) span {
-    background-color: red;
+.row_span span {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
 }
 
-li:nth-child(even) span {
-    background-color: dodgerblue;
+@media only screen and (min-width: 320px) {
+    .row_span span:nth-child(odd), li:nth-child(odd) span {
+        background-color: red;
+        width: 20px;
+        height: 20px;
+    }
+    .row_span span:nth-child(even), li:nth-child(even) span {
+        background-color: dodgerblue;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .row_span span:nth-child(odd), li:nth-child(odd) span {
+        background-color: yellow;
+        width: 20px;
+        height: 20px;
+    }
+    .row_span span:nth-child(even), li:nth-child(even) span {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .row_span span:nth-child(odd), li:nth-child(odd) span {
+        background-color: sienna;
+        width: 30px;
+        height: 30px;
+    }
+    .row_span span:nth-child(even), li:nth-child(even) span {
+        background-color: yellow;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .row_span span:nth-child(odd), li:nth-child(odd) span {
+        background-color: yellow;
+        width: 30px;
+        height: 30px;
+    }
+    .row_span span:nth-child(even), li:nth-child(even) span {
+        background-color: purple;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .row_span span:nth-child(odd), li:nth-child(odd) span {
+        background-color: purple;
+        width: 50px;
+        height: 50px;
+    }
+    .row_span span:nth-child(even), li:nth-child(even) span {
+        background-color: pink;
+        width: 100px;
+        height: 100px;
+    }
 }
